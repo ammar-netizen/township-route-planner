@@ -164,7 +164,7 @@ npm run preview
 
 #### For Android (Google Chrome / Brave / Edge):
 1. Open the live link in **Chrome**.
-2. Look for the automatic prompt at the bottom: **"Add TeduhWay to Home screen"** or tap the **three dots menu (⋮)** in the top right.
+2. Look for the automatic prompt at the bottom: **"Add to Home screen"** or tap the **three dots menu (⋮)** in the top right.
 3. Select **"Install app"** (or **"Add to Home screen"**).
 4. Tap **Install**. The green TeduhWay icon will appear on your phone home screen and open in full-screen standalone mode with offline support.
 
