@@ -10,7 +10,7 @@
 
 Many township residents can reach a public transport station only if the walk to it is safe and shaded. Malaysia’s first-and-last mile connectivity remains the weakest part of its public transport system, despite heavy rail transit investments (LRT, MRT, and Komuter). 
 
-This project delivers **TeduhWay (Township Route Planner)**, a Progressive Web Application (PWA) that recommends the shadiest, safest walking routes from home to the nearest LRT, MRT, or bus stop, paired with a closed-loop reporting mechanism for residents to flag broken or unsafe pedestrian infrastructure.
+This project delivers **Township Route Planner**, a Progressive Web Application (PWA) that recommends the shadiest, safest walking routes from home to the nearest LRT, MRT, or bus stop, paired with a closed-loop reporting mechanism for residents to flag broken or unsafe pedestrian infrastructure.
 
 ---
 
@@ -81,7 +81,7 @@ Residents drop a pin, capture a photo, and submit reports. Automated image analy
 
 Most navigation applications (Google Maps, Waze) strictly optimize for vehicle speed or the shortest distance, directing pedestrians down blistering, dangerous arterial roads. 
 
-**TeduhWay** innovates by:
+**Township Route Planner** innovates by:
 1. Optimizing for **thermal comfort, tree shade, and human health**.
 2. Providing **dynamic hazard-avoidance detours** around verified broken pavements.
 3. Enabling **two-way civic accountability** through a public resolution tracker with community verification upvotes.
@@ -99,7 +99,34 @@ Most navigation applications (Google Maps, Waze) strictly optimize for vehicle s
 
 ---
 
-## 8. Getting Started
+## 8. Project File Structure
+
+```
+township-route-planner/
+├── public/
+│   └── icons/
+│       ├── icon.svg                 # Vector app icon
+│       ├── icon-192.png             # PWA Home Screen icon (192x192)
+│       └── icon-512.png             # PWA Splash Screen icon (512x512)
+├── src/
+│   ├── data/
+│   │   └── segments.js              # 3 route coordinates, step directions & audit scores
+│   ├── services/
+│   │   ├── firebase.js              # Cloud Firestore sync with timeout fallback
+│   │   └── gemini.js                # AI Vision service for photo hazard assessment
+│   ├── main.js                      # Application controller: maps, PWA, routing & feeds
+│   └── style.css                    # Custom styles: sliding bottom sheet, animations & theme
+├── index.html                       # Mobile-first app shell & 4 interactive views
+├── vite.config.js                   # Vite bundler & PWA Workbox caching config
+├── package.json                     # Project dependencies & npm scripts
+├── .env.example                     # Environment template for API keys
+├── .gitignore                       # Git exclusion rules (protects .env & node_modules)
+└── README.md                        # Full project report, documentation & guides
+```
+
+---
+
+## 9. Getting Started
 
 ### Prerequisites
 - Node.js (v18+)
