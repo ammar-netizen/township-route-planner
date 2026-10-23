@@ -1,4 +1,4 @@
-# Full Report: Township Route Planner
+# Township Route Planner
 
 **Theme:** People (Mobility, Healthy Lifestyles)  
 **Status:** Completed Prototype & Proposal  
@@ -119,8 +119,7 @@ township-route-planner/
 ├── index.html                       # Mobile-first app shell & 4 interactive views
 ├── vite.config.js                   # Vite bundler & PWA Workbox caching config
 ├── package.json                     # Project dependencies & npm scripts
-├── .env.example                     # Environment template for API keys
-├── .gitignore                       # Git exclusion rules (protects .env & node_modules)
+├── .gitignore                       # Git exclusion rules
 └── README.md                        # Full project report, documentation & guides
 ```
 
@@ -152,3 +151,54 @@ npm run dev
 npm run build
 npm run preview
 ```
+
+---
+
+## 10. Progressive Web App (PWA) User Guide
+
+**TeduhWay** is built as an installable Progressive Web Application. Users and hackathon evaluators do not need to download an APK or visit the App Store.
+
+### 🌐 Live Demo URL
+👉 **[https://ammar-netizen.github.io/township-route-planner/](https://ammar-netizen.github.io/township-route-planner/)**
+
+---
+
+### 📲 How to Install & Use on Mobile Devices
+
+#### For Android (Google Chrome / Brave / Edge):
+1. Open the live link in **Chrome**.
+2. Look for the automatic prompt at the bottom: **"Add TeduhWay to Home screen"** or tap the **three dots menu (⋮)** in the top right.
+3. Select **"Install app"** (or **"Add to Home screen"**).
+4. Tap **Install**. The green TeduhWay icon will appear on your phone home screen and open in full-screen standalone mode with offline support.
+
+#### For iOS / iPhone (Apple Safari):
+1. Open the live link in **Safari**.
+2. Tap the **Share icon** (`[ ↑ ]` box with an upward arrow) on the bottom toolbar.
+3. Scroll down the menu and tap **"Add to Home Screen"** (`[+]` icon).
+4. Tap **Add** in the top right corner. The app will launch without the Safari URL bar, feeling like a native iOS application.
+
+---
+
+### 🗺️ Core Features Walkthrough for Evaluators
+
+1. **Compare 3 Walking Routes:**
+   - Tap **"Pin on Map"** or type a station (e.g., `KLCC`, `SS15`) into the search pill.
+   - Choose between **Route 1 (Shaded Canopy)**, **Route 2 (Safe Detour bypassing broken kerbs)**, or **Route 3 (Step-Free OKU Accessible)**.
+   - The **Smart Walk Advisor** box automatically explains the comfort and safety trade-offs.
+
+2. **Toggle Wide Map View:**
+   - Tap the **`[ ⤢ Hide Panels ]`** button in the top navigation bar to slide away search boxes and inspect the street map in full screen.
+   - Tap the floating **`[ 👁️ Show Search & Routes ]`** pill anytime to restore controls.
+
+3. **View Defect & Heat Stress Heatmap:**
+   - Tap the **Flame icon `[ 🔥 ]`** on the top search bar to toggle the township hazard cluster heatmap.
+
+4. **Report Walkway Hazards:**
+   - Switch to the **Report** tab, tap **"Here"** or enter a street name.
+   - Attach a sidewalk photo to trigger the automated hazard detection scanner.
+   - Tap **Submit Report** to instantly place a photo hazard pin on the map and populate the community feed.
+
+5. **Track Closed-Loop Resolution:**
+   - Switch to the **Status** tab to filter reports by **All**, **New**, **Seen**, and **Fixed**.
+   - Tap **"Confirmed"** to upvote existing hazard reports.
+
