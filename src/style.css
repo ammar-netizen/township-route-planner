@@ -1,0 +1,116 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Ensure Leaflet controls and tile panes stay under custom UI overlays */
+.leaflet-pane {
+  z-index: 400 !important;
+}
+.leaflet-top,
+.leaflet-bottom {
+  z-index: 500 !important;
+}
+
+/* Fixed Floating Search & Control Bar (Always visible above map at all zoom levels) */
+.map-floating-search {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  right: 14px;
+  z-index: 1000 !important;
+  pointer-events: auto;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.map-floating-search.collapsed {
+  transform: translateY(-85px);
+}
+
+/* Bottom Suggestions Card (Sliding Bottom Sheet) */
+.map-floating-bottom {
+  position: absolute;
+  bottom: 0px;
+  left: 14px;
+  right: 14px;
+  z-index: 1000 !important;
+  pointer-events: auto;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* When collapsed, it slides down so only the slim drag bar & header peek out */
+.map-floating-bottom.collapsed {
+  transform: translateY(calc(100% - 50px));
+}
+
+/* Bottom sheet handle bar (like Google Maps & Grab) */
+.sheet-handle {
+  width: 44px;
+  height: 5px;
+  background-color: #dee2e6;
+  border-radius: 10px;
+  margin: 0 auto 8px auto;
+  cursor: pointer;
+}
+
+.sheet-handle:hover {
+  background-color: #adb5bd;
+}
+
+.mode-pill.active {
+  background-color: #198754 !important;
+  color: #ffffff !important;
+  border-color: #198754 !important;
+}
+
+.filter-btn.active {
+  background-color: #198754 !important;
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+.nav-tab-btn {
+  color: #6c757d;
+  flex: 1;
+}
+
+.nav-tab-btn.active {
+  color: #198754;
+  font-weight: 600;
+}
+
+.nav-tab-btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.report-badge-new {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.report-badge-seen {
+  background-color: #0dcaf0;
+  color: #212529;
+}
+
+.report-badge-fixed {
+  background-color: #198754;
+  color: #ffffff;
+}
+
+/* Waze / Moovit location puck pulse animation */
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+  70% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+}
