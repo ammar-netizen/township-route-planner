@@ -156,14 +156,11 @@ npm run preview
 
 ## 10. Progressive Web App (PWA) User Guide
 
-**TeduhWay** is built as an installable Progressive Web Application. Users and hackathon evaluators do not need to download an APK or visit the App Store.
-
-### 🌐 Live Demo URL
-👉 **[https://ammar-netizen.github.io/township-route-planner/](https://ammar-netizen.github.io/township-route-planner/)**
+**Township Route Planner** is built as an installable Progressive Web Application. Users and hackathon evaluators do not need to download an APK or visit the App Store.
 
 ---
 
-### 📲 How to Install & Use on Mobile Devices
+### How to Install & Use on Mobile Devices
 
 #### For Android (Google Chrome / Brave / Edge):
 1. Open the live link in **Chrome**.
@@ -179,7 +176,7 @@ npm run preview
 
 ---
 
-### 🗺️ Core Features Walkthrough for Evaluators
+### Core Features Walkthrough for Evaluators
 
 1. **Compare 3 Walking Routes:**
    - Tap **"Pin on Map"** or type a station (e.g., `KLCC`, `SS15`) into the search pill.
@@ -188,7 +185,7 @@ npm run preview
 
 2. **Toggle Wide Map View:**
    - Tap the **`[ ⤢ Hide Panels ]`** button in the top navigation bar to slide away search boxes and inspect the street map in full screen.
-   - Tap the floating **`[ 👁️ Show Search & Routes ]`** pill anytime to restore controls.
+   - Tap the floating **`[ Show Search & Routes ]`** pill anytime to restore controls.
 
 3. **View Defect & Heat Stress Heatmap:**
    - Tap the **Flame icon `[ 🔥 ]`** on the top search bar to toggle the township hazard cluster heatmap.
